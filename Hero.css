@@ -1,0 +1,129 @@
+
+
+/* ---------------------------------------------------------------------------------------------- */
+
+
+  /* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: url("./image/dish22.jpg");
+    width: 100%;
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+    background-position: center; /* Centers the image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .hero-content h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    animation: slideIn 1.5s ease-out;
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+    animation: slideIn 1.5s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Animated Title Words */
+  .title-word {
+    animation: color-animation 4s linear infinite;
+  }
+  
+  .title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+  }
+  
+  .title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+  }
+  
+  .title-word-3 {
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+  }
+  
+  .title-word-4 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+  }
+  
+  @keyframes color-animation {
+    0% { color: var(--color-1); }
+    32% { color: var(--color-1); }
+    33% { color: var(--color-2); }
+    65% { color: var(--color-2); }
+    66% { color: var(--color-3); }
+    99% { color: var(--color-3); }
+    100% { color: var(--color-1); }
+  }
+  
+  /* Container for Title */
+  .container {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    height: 100vh;
+  }
+  
+  .title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 8.5vw;
+    text-transform: uppercase;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-content h2 {
+      font-size: 2.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  
+    .title {
+      font-size: 6vw;
+    }
+  }
+  
+
+ 

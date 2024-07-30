@@ -1,0 +1,23 @@
+/* CustomCursor.css */
+body {
+    cursor: none; /* Hide the default cursor */
+  }
+  
+  .custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ff6347;
+    border-radius: 50%;
+    pointer-events: none; /* Prevent the cursor from blocking interactions */
+    transition: transform 0.1s ease, border 0.3s ease;
+    z-index: 10000;
+    mix-blend-mode: difference; /* To ensure visibility on different backgrounds */
+    transform: translate(-50%, -50%); /* Center the cursor */
+  }
+  
+  .custom-cursor.animate {
+    transform: scale(1.5) translate(-50%, -50%);
+    border: 2px solid #34c759;
+  }
+  
